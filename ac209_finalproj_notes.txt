@@ -1,0 +1,36 @@
+AC209 
+Final Project Notes
+A. Meisner & M. Williams
+
+Meeting Notes
+_______________
+_______________
+
+
+
+10.24.2014
+__________
+** Possible Questions/Directions
+	- Predict the positve/negative score of a game based on the text of the associated review 
+	- Develop a regression model to predict the numerical score of a game given text in the review 
+	- Use reddit or other social networking sites plus gaming sites to predict scores for future games 
+
+** Possible Data Sets to use
+	(Gaming)
+	- Giant Bomb (has an API)
+	- IGN
+	- Gamespot
+	(Social Sites)
+	- Twitter
+	- Reddit
+
+** Main Tasks for next meeting
+	- Get Giant Bomb API and try to get any form of data
+		- If Fail: Make preparations to Data Scrape 
+
+
+
+
+
+11.??.2014
+__________
