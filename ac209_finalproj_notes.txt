@@ -17,7 +17,7 @@ __________
 
 ** Possible Data Sets to use
 	(Gaming)
-	- Giant Bomb (has an API)
+	- Giant Bomb (has an API): http://www.giantbomb.com/api/
 	- IGN
 	- Gamespot
 	(Social Sites)
@@ -32,5 +32,35 @@ __________
 
 
 
-11.??.2014
+11.08.2014
 __________
+** Results since previous meeting
+	- Success in accessing Giant Bomb data through API
+
+** Main Question 1: Can we predict the score of a review based on the text in the review blurb?
+
+** Main Question 2: (Need additional questions for analysis)
+
+** Exploratory Analysis Questions (look at "gp_expl_analysis.ipynb" for details)
+	- Giant Bomb score distribution
+	- Correlation between game score and company
+	- Types of games which are the most popular
+	- Giant Bomb scores over the years
+	- User score distribution
+	- User scores and critics (i.e. staff) scores
+	- Staff score distribution
+
+
+
+** Main Tasks for next meeting
+	- Scrape reviews from Game Spot if possible
+	- Rough Draft of Proposal?
+	- Complete Exploratory Analyses on Giant Bomb Data Set
+
+	- Create a stable data set: 
+		- Review information 
+		- Company information
+		- User Reviews
+
+
+
