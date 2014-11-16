@@ -6,6 +6,15 @@ Background and Motivation
 Discuss your motivations and reasons for choosing this project, especially any
 background or research interests that may have influenced your decision.
 ================================================================================
+Since their inception, video games have been somewhat of a fringe cultural phenomenon. Not having the same aesthetic appeal as film or literature and not bearing the institutional legitimacy of more traditional games like chess, video games were considered for a long time awkwardly placed in the world of leisure activities. Video game’s in between status was mirrored in the lack of seriousness people took their. 
+
+But in the past decade with the development of new family oriented gaming consoles like the Wii, the creation of artistically rendered and presented games like Heavy Rain and The Last of Us, and the organization of pre-professional and competitive gaming societies, video games are slowly evolving from merely being the visual toys used exclusively by male teenagers to a new form of media which many demographics can use.  
+
+The mediated reality potential video games make possible, only further ensures their relevance will continue to grow. And as this relevance grows, and the demand for a wider assortment of video games beyond the traditional action/adventure, role-playing game, shooter trifecta grows also, there will spring a larger need for video game criticism akin to that which exists for film and television today. 
+
+Data scientists have a role in categorizing and understanding this criticism. By applying textual analysis techniques, we can determine whether a review is positive or negative. Not all online video game reviews are associated with a numerical weighting. By developing a text- rating classification scheme we will be able to determine what any online text related to a video game, suggests about the quality of the video game. 
+
+
 
 Project Objectives
 What are the scientific and inferential goals for this project? What would you 
@@ -53,6 +62,8 @@ that your project does well?
 Visualization & Presentation
 How will you visualize and communicate your results?
 ====================================================
+
+
 
 Schedule / timeline
 Make sure that you plan your work so that you can avoid a big rush right before
