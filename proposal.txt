@@ -99,7 +99,21 @@ that your project does well?
 Visualization & Presentation
 How will you visualize and communicate your results?
 ====================================================
+Visualizations will be important at various stages in our analysis. First,
+we will include exploratory visualizations near the beginning of our process
+book to answer questions like: What is the distribution of review scores? What
+is the time trend of the average review score over the years? What is the
+average review score grouped by company, console, or reviewer? Such plots
+would include basic histograms, line plots and bar charts.
 
+Second, we will want to use visualizations to display our model calibration
+results, similar to the "Bayesian Tomatoes" part 3.4 plots.
+
+Finally, we will want to create a "take-home" visualization that illustrates
+the results of our final classification analysis. One visualization we intend 
+to make would be JavaScript word clouds of the most strongly positive and 
+negative words, wherein mousing over each word deploys a tooltip showing 
+P(good|word).
 
 
 Schedule / timeline
