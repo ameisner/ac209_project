@@ -48,10 +48,23 @@ Those features or calculations which you consider would be nice to have, but
 not critical.
 ================================================================================
 
-As part of our exploratory analysis we would also want to know what metadata variables can affect video game reviews. Some questions we want to answer include: Is there a time trend associated with video game reviews? Do certain video game reviewers consistently give better or worse ratings than the average? Do the same companies consistently produce high rating games? 
-
+As part of our exploratory analysis we would also want to know what metadata 
+variables can affect video game reviews. Time permitting, it would be 
+interesting to incorporate such metadata variables into our classifiers via 
+priors. Some questions we want to answer include: Is there a time trend 
+associated with video game reviews? Do certain video game reviewers 
+consistently give better or worse ratings than the average? Do the same 
+companies consistently produce high rating games? 
  
+Other optional features are associated with additional classification options. 
+For instance, Naive Bayes features are single words. But, time permitting, it 
+would be interesting to investigate using n-grams of words, e.g. pairs of words
+as features. Also, it would be interesting to compare Naive Bayes 
+classification to random forest classification, still using single-word 
+features.
 
+Another possible avenue we may not have time explore is comparing published 
+reviews to user reviews.
 
 What Data?
 From where and how are you collecting your data?
@@ -91,7 +104,7 @@ Naive Bayes classifier in several ways. One example would be to use the
 "stemming" technique from natural language processing to merge features which 
 are the same in sentiment such that e.g. "awesomeness" and "awesome" would both
 map to a single feature. Second, we could incorporate priors on e.g. reviewer, 
-or game manufacturer during Naive Bayes classification. We also will attempt 
+or game manufacturer during Naive Bayes classification. We also hope to attempt 
 random forest classification for the sake of comparison. Time permitting, we 
 may explore using n-grams as features rather than single words. In terms of 
 predicting the scores of ratings, we will attempt to use k-nearest neighbors 
