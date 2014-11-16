@@ -29,6 +29,21 @@ From where and how are you collecting your data?
 Design Overview
 List the statistical and computational methods you plan to use.
 ===============================================================
+Our final analysis will center around applying and comparing various text 
+sentiment classification techniques. For our baseline classification model, we 
+will apply Naive Bayes classification to review summaries to predict whether a 
+review is "positive" or "negative", in a manner analogous to that employed by 
+last year's "Bayesian Tomatoes" assignment, including cross validation. 
+Individual words will be used as features. We will also extend our baseline 
+Naive Bayes classifier in several ways. One example would be to use the 
+"stemming" technique from natural language processing to merge features which 
+are the same in sentiment such that e.g. "awesomeness" and "awesome" would both
+map to a single feature. Second, we could incorporate priors on e.g. reviewer, 
+or game manufacturer during Naive Bayes classification. We also will attempt 
+random forest classification for the sake of comparison. Time permitting, we 
+may explore using n-grams as features rather than single words. In terms of 
+predicting the scores of ratings, we will attempt to use k-nearest neighbors 
+regression as a baseline, and attempt other regression methods as time permits.
 
 Verification
 How will you verify your project's results? In other words, how do you know 
