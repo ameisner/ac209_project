@@ -40,6 +40,9 @@ Second, we must execute a Naive Bayes classifier on the review summary
 corpus. Third, we must attempt a k-nearest neighbors regression to predict
 the numerical review ratings based on review summary text.
 
+
+
+
 Optional Features
 Those features or calculations which you consider would be nice to have, but 
 not critical.
@@ -101,6 +104,9 @@ How will you verify your project's results? In other words, how do you know
 that your project does well?
 ================================================================================
 
+
+
+
 Visualization & Presentation
 How will you visualize and communicate your results?
 ====================================================
@@ -128,3 +134,33 @@ among your team members. Write this in terms of weekly deadlines.
 =================================================================
 
 
+There are roughly 4 weeks until the video presentation and website are due. Currently, from data scraping Gamespot reviews and using the Giant Bomb API, we have already gathered our main data sets for analysis. We have also answered some basic exploratory analysis questions such as what is the distribution of Giant Bomb and Gamespot scores.  From now until the project presentation deadline, we hope to meet the following other objectives. 
+
+Week 1
+- Nov 16 - 23, 2014
+	- Investigate all other exploratory analysis questions
+
+	- Precisely define main question for analysis next week
+
+Week 2
+- Nov 23 - 30, 2014
+	- Complete major portions of analysis. (Needs to be more specific)
+
+
+Week 3
+- Nov 30 - Dec 7, 2014
+	- Complete first draft of process book; Includes the ‘narrative’ of the project in addition to 
+	the visualizations and main code resulting from last weeks analysis. 
+	- Make software preparations for website and video construction
+		- Have website template prepared. 
+		- Acquire hardware and programs which are needed to make video. 
+
+Week 4
+- Dec 7 – 10, 2014
+	- Edit process book and prepare final draft for submission 
+	- Outline sections of website 
+	- 
+
+- Dec 10-12, 2014
+	- Complete Website
+	- Complete Video Presentation 
