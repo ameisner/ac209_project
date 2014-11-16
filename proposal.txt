@@ -69,9 +69,6 @@ source of reviews, we already have gathered the summary text and scores. We
 will need to make a cut on the review scores from each source to split reviews 
 into labels of "positive" and "negative".
 
-
-
-
 Design Overview
 List the statistical and computational methods you plan to use.
 ===============================================================
