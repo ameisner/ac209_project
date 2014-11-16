@@ -31,6 +31,14 @@ Must-Have Features
 These are features or calculations without which you would consider your 
 project to be a failure.
 ================================================================================
+The first must have feature of our analysis is the data collection, 
+particularly in terms of gathering thousands of review summaries and their
+corresponding numerical ratings. We have already successfully performed this 
+data collection via the Giant Bomb API and by scraping GameSpot.
+
+Second, we must execute a Naive Bayes classifier on the review summary 
+corpus. Third, we must attempt a k-nearest neighbors regression to predict
+the numerical review ratings based on review summary text.
 
 Optional Features
 Those features or calculations which you consider would be nice to have, but 
