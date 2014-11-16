@@ -27,7 +27,6 @@ As a first benefit, the project extends the domain of applicability of textual a
 
 
 
-
 Must-Have Features
 These are features or calculations without which you would consider your 
 project to be a failure.
@@ -37,6 +36,11 @@ Optional Features
 Those features or calculations which you consider would be nice to have, but 
 not critical.
 ================================================================================
+
+As part of our exploratory analysis we want to know what hidden variables can affect video game reviews. Some questions we want to answer include. 
+	- Is there a time trend associated with video game reviews?
+	- Do certain video game reviewers consistently give better or worse ratings than the average?
+	- Do the same companies consistently produce high rating games? 
 
 
 
