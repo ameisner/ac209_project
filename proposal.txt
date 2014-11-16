@@ -21,7 +21,7 @@ What are the scientific and inferential goals for this project? What would you
 like to learn and accomplish? List the benefits.
 ================================================================================
 
-The goal is to first determine whether its possible to classify the quality (colloquially constrained to be either ‘good’ or ‘bad’) of video games according to their text reviews. Second,  if we find that classification according one scheme is possible, we want to compare various classifiers and understand why certain classifiers are more accurate than others. 
+The goal is to first determine whether its possible to classify the quality (colloquially constrained to be either ‘good’ or ‘bad’) of video games according to their text reviews. Second, we want to compare various classifiers and understand why certain classifiers are more accurate than others. 
 
 As a first benefit, the project extends the domain of applicability of textual analysis from movie reviews  to video game reviews. As a secondary benefit, our methods could perhaps be adapted to more general contexts where the community opinion for a certain game could be determined by scraping together online text related to the game. This ‘opinion’ could then perhaps be used to pre-emptively gauge the potential demand for a game which has yet to be released. 
 
@@ -86,3 +86,5 @@ Make sure that you plan your work so that you can avoid a big rush right before
 the final project deadline, and delegate different modules and responsibilities
 among your team members. Write this in terms of weekly deadlines.
 =================================================================
+
+
