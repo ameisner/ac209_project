@@ -32,6 +32,9 @@ These are features or calculations without which you would consider your
 project to be a failure.
 ================================================================================
 
+
+
+
 Optional Features
 Those features or calculations which you consider would be nice to have, but 
 not critical.
@@ -95,6 +98,9 @@ Verification
 How will you verify your project's results? In other words, how do you know 
 that your project does well?
 ================================================================================
+
+
+
 
 Visualization & Presentation
 How will you visualize and communicate your results?
