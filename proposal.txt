@@ -6,13 +6,13 @@ Background and Motivation
 Discuss your motivations and reasons for choosing this project, especially any
 background or research interests that may have influenced your decision.
 ================================================================================
-Since their inception, video games have been somewhat of a fringe cultural phenomenon. Not having the same aesthetic appeal as film or literature and not bearing the institutional legitimacy of more traditional games like chess, video games were considered for a long time awkwardly placed in the world of leisure activities.
+Since their inception video games have been somewhat of a fringe cultural phenomena. Not having the same aesthetic appeal as film or literature and not bearing the institutional legitimacy of more traditional games like chess, video games were considered for a long time awkwardly placed in the world of leisure activities.
 
-But in the past decade with the development of new family oriented gaming consoles like the Wii, the creation of artistically rendered and presented games like Heavy Rain and The Last of Us, and the organization of pre-professional and competitive gaming societies, video games are slowly evolving from merely being the visual toys used exclusively by male teenagers to a new form of media which many demographics can use.  
+But in the past decade with the development of new family oriented gaming consoles like the Wii, the creation of artistically rendered and presented games like Heavy Rain and The Last of Us, and the organization of pre-professional and competitive gaming societies, video games are slowly evolving from merely being the visual toys used exclusively by male teenagers to a new form of media which people of widely different demographic backgrounds can engage with.  
 
-The mediated reality potential video games make possible, only further ensures their relevance will continue to grow. And as this relevance grows, and the demand for a wider assortment of video games beyond the traditional action/adventure, role-playing game, shooter trifecta grows also, there will spring a larger need for video game criticism akin to that which exists for film and television today. 
+The mediated reality potential video games make possible only further ensures their relevance will continue to grow. And as this relevance grows, and the demand for a wider assortment of video games beyond the traditional action/adventure, role-playing game, shooter trifecta grows in tandem, there will spring a larger need for video game criticism akin to that which exists for film and television today. 
 
-Data scientists have a role in categorizing and understanding this criticism. By applying textual analysis techniques, we can determine whether a review is positive or negative. Not all online video game reviews are associated with a numerical weighting. By developing a text-rating classification scheme we will be able to determine what any online text related to a video game suggests about the quality of the video game. 
+Data scientists have a role in categorizing and understanding this criticism. By applying textual analysis techniques, we can determine whether a review for a video game is positive or negative and thus whether a prospective buyer should purchase the game. More over, not all online video game reviews/discussions are associated with a numerical score. By developing a text-rating classification scheme we will be able to determine what any online text related to a video game suggests about the quality of the video game. 
 
 
 
@@ -164,6 +164,6 @@ Week 4
 	- Outline sections of website 
 	- Prepare script for video presentation
 
-- Dec 10-12, 2014
+- Dec 10 - 12, 2014
 	- Complete Website
 	- Complete video presentation 
