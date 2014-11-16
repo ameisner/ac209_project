@@ -25,6 +25,27 @@ not critical.
 What Data?
 From where and how are you collecting your data?
 ================================================
+We have already gathered data from two sources. Our first source is the Giant 
+Bomb video game website, which conveniently features APIs for published 
+reviews, company information and user reviews. Giant Bomb review scores are 
+integers, 1 (worst) through 5 (best). The Giant Bomb API is helpful in that
+we can access review summaries, full review text and plenty of metadata for 
+each game without scraping. The downside is that only 646 published reviews are
+available via the API, which is likely insufficient given that we anticipate 
+requiring a training set of several thousand review summaries. On the other 
+hand, GameSpot has 13702 published reviews, but no API. We have therefore 
+written a web scraper to gather all of the review summaries and corresponding 
+scores for every GameSpot review published from 1996 to present. Although we 
+now have these GameSpot review summaries and scores in hand, the lack of a 
+GameSpot API makes gathering further metadata difficult/tedious. GameSpot 
+review scores are more finely grained, ranging from 0 (worst) to 10 (best), 
+including some non-integer scores.
+
+The crucial data for our text classification are review summaries for published 
+reviews (typically ~20 words) and their corresponding review scores. For each 
+source of reviews, we already have gathered the summary text and scores. We 
+will need to make a cut on the review scores from each source to split reviews 
+into labels of "positive" and "negative".
 
 Design Overview
 List the statistical and computational methods you plan to use.
