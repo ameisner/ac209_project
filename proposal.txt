@@ -103,9 +103,16 @@ Verification
 How will you verify your project's results? In other words, how do you know 
 that your project does well?
 ================================================================================
+There are two main components of our verification process. First, for each
+classifier in our final analysis, we will need to split our data into train and
+test sets, and then verify that we have not overfit by making predictions for 
+the unseen test data.
 
-
-
+A second verification step will be to compare our classification accuracy
+to the "Bayesian Tomatoes" classification accuracy of ~77%. This will
+tell us whether we did "well" or did poorly on our video game review 
+predictions relative to the previously studied case of movie reviews from 
+Rotten Tomatoes.
 
 Visualization & Presentation
 How will you visualize and communicate your results?
