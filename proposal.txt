@@ -1,61 +1,87 @@
 Title of your project proposal
 ==============================
-Video game reviews : classification and predicted ratings
+Video game reviews: text classification and predicted ratings
 
 Background and Motivation
 Discuss your motivations and reasons for choosing this project, especially any
 background or research interests that may have influenced your decision.
 ================================================================================
-Since their inception video games have been somewhat of a fringe cultural phenomena. Not having the same aesthetic appeal as film or literature and not bearing the institutional legitimacy of more traditional games like chess, video games were considered for a long time awkwardly placed in the world of leisure activities.
+Since their inception video games have been somewhat of a fringe cultural 
+phenomenon. Not having the same aesthetic appeal as film or literature and not 
+bearing the institutional legitimacy of more traditional games like chess, 
+video games were considered for a long time awkwardly placed in the world of 
+leisure activities.
 
-But in the past decade with the development of new family oriented gaming consoles like the Wii, the creation of artistically rendered and presented games like Heavy Rain and The Last of Us, and the organization of pre-professional and competitive gaming societies, video games are slowly evolving from merely being the visual toys used exclusively by male teenagers to a new form of media which people of widely different demographic backgrounds can engage with.  
+But in the past decade with the development of new family-oriented gaming 
+consoles like the Wii, the creation of artistically rendered and presented 
+games like Heavy Rain and The Last of Us, and the organization of 
+pre-professional and competitive gaming societies, video games are slowly 
+evolving from merely being the visual toys used exclusively by male teenagers 
+to a new form of media which people of widely different demographic backgrounds
+can engage with.
 
-The mediated reality potential video games make possible only further ensures their relevance will continue to grow. And as this relevance grows, and the demand for a wider assortment of video games beyond the traditional action/adventure, role-playing game, shooter trifecta grows in tandem, there will spring a larger need for video game criticism akin to that which exists for film and television today. 
+The mediated reality potential video games make possible only further ensures 
+their relevance will continue to grow. And as this relevance grows, and the 
+demand for a wider assortment of video games beyond the traditional 
+action/adventure, role-playing game, shooter trifecta grows in tandem, there 
+will spring a larger need for video game criticism akin to that which exists 
+for film and television today.
 
-Data scientists have a role in categorizing and understanding this criticism. By applying textual analysis techniques, we can determine whether a review for a video game is positive or negative and thus whether a prospective buyer should purchase the game. More over, not all online video game reviews/discussions are associated with a numerical score. By developing a text-rating classification scheme we will be able to determine what any online text related to a video game suggests about the quality of the video game. 
-
-
+Data scientists have a role in categorizing and understanding this criticism. 
+By applying textual analysis techniques, we can determine whether a review for 
+a video game is positive or negative and thus whether a prospective buyer 
+should purchase the game. More over, not all online video game 
+reviews/discussions are associated with a numerical score. Developing a 
+text-based review classification scheme represents a step towards being able to 
+determine what any arbitrary online text related to a video game suggests about
+the quality of that video game.
 
 Project Objectives
 What are the scientific and inferential goals for this project? What would you 
 like to learn and accomplish? List the benefits.
 ================================================================================
+The broad goal of this project is to explore the possibility of classifying the
+sentiment (colloquially constrained to be either "good" or "bad") of video 
+game reviews by algorithmically analyzing their summary text. In more detail, 
+we want to compare the performance of various classifiers as applied to this 
+task and understand why certain classifiers might be more accurate than others.
+We also would like to determine the extent to which video game review summary 
+text can be used to predict the corresponding numerical rating of a review.
 
-The goal is to first determine whether its possible to classify the quality (colloquially constrained to be either ‘good’ or ‘bad’) of video games according to their text reviews. Second, we want to compare various classifiers and understand why certain classifiers are more accurate than others. 
-
-As a first benefit, the project extends the domain of applicability of textual analysis from movie reviews  to video game reviews. As a secondary benefit, our methods could perhaps be adapted to more general contexts where the community opinion for a certain game could be determined by scraping together online text related to the game. This ‘opinion’ could then perhaps be used to pre-emptively gauge the potential demand for a game which has yet to be released. 
-
-
+As a first benefit, the project extends the domain of applicability of textual 
+analysis from movie reviews (e.g. last year's "Bayesian Tomatoes" assignment) 
+to video game reviews. As a secondary benefit, our methods could perhaps be 
+adapted to more general contexts where the community opinion for a certain game
+could be determined by scraping together online text related to the game. This 
+"opinion" could then perhaps be used to pre-emptively gauge the potential 
+demand for a game which has yet to be widely adopted or even released.
 
 Must-Have Features
 These are features or calculations without which you would consider your 
 project to be a failure.
 ================================================================================
-The first must have feature of our analysis is the data collection, 
-particularly in terms of gathering thousands of review summaries and their
+The first must have feature of our project is the data collection, in 
+particular gathering thousands of video game review text summaries and their 
 corresponding numerical ratings. We have already successfully performed this 
-data collection via the Giant Bomb API and by scraping GameSpot.
+data collection by using the Giant Bomb API and by scraping the GameSpot 
+website (see below for further details).
 
-Second, we must execute a Naive Bayes classifier on the review summary 
-corpus. Third, we must attempt a k-nearest neighbors regression to predict
-the numerical review ratings based on review summary text.
-
-
-
+Second, we must execute a Naive Bayes classifier on the review summary corpus. 
+Third, we must attempt a k-nearest neighbors regression to predict numerical 
+review ratings based on review summary text.
 
 Optional Features
 Those features or calculations which you consider would be nice to have, but 
 not critical.
 ================================================================================
-
-As part of our exploratory analysis we would also want to know what metadata 
-variables can affect video game reviews. Time permitting, it would be 
+As part of our exploratory analysis we might want to investigate how certain
+metadata variables affect video game reviews. Time permitting, it would be 
 interesting to incorporate such metadata variables into our classifiers via 
-priors. Some questions we want to answer include: Is there a time trend 
-associated with video game reviews? Do certain video game reviewers 
+priors. Some examples of relevant questions are: Is there a time trend 
+associated with video game review scores? Do certain video game reviewers 
 consistently give better or worse ratings than the average? Do the same 
-companies consistently produce high rating games? 
- 
+companies consistently produce highly rated games? 
+
 Other optional features are associated with additional classification options. 
 For instance, Naive Bayes features are single words. But, time permitting, it 
 would be interesting to investigate using n-grams of words, e.g. pairs of words
@@ -63,18 +89,18 @@ as features. Also, it would be interesting to compare Naive Bayes
 classification to random forest classification, still using single-word 
 features.
 
-Another possible avenue we may not have time explore is comparing published 
-reviews to user reviews.
+Another possible avenue we may not have time explore is comparing formally
+published reviews to informal user reviews found online.
 
 What Data?
 From where and how are you collecting your data?
 ================================================
 We have already gathered data from two sources. Our first source is the Giant 
-Bomb video game website, which conveniently features APIs for published 
-reviews, company information and user reviews. Giant Bomb review scores are 
-integers, 1 (worst) through 5 (best). The Giant Bomb API is helpful in that
+Bomb video gaming website, which conveniently offers APIs for published 
+reviews, gaming company information and user reviews. Giant Bomb review scores 
+are integers, 1 (worst) through 5 (best). The Giant Bomb API is helpful in that
 we can access review summaries, full review text and plenty of metadata for 
-each game without scraping. The downside is that only 646 published reviews are
+each game without scraping. The downside is that only 646 published reviews are 
 available via the API, which is likely insufficient given that we anticipate 
 requiring a training set of several thousand review summaries. On the other 
 hand, GameSpot has 13702 published reviews, but no API. We have therefore 
@@ -87,9 +113,9 @@ including some non-integer scores.
 
 The crucial data for our text classification are review summaries for published 
 reviews (typically ~20 words) and their corresponding review scores. For each 
-source of reviews, we already have gathered the summary text and scores. We 
-will need to make a cut on the review scores from each source to split reviews 
-into labels of "positive" and "negative".
+source of reviews, we have already gathered the review summary text and scores.
+We will need to make a cut on the review scores from each source to split 
+reviews into labels of "good" and "bad".
 
 Design Overview
 List the statistical and computational methods you plan to use.
@@ -97,18 +123,19 @@ List the statistical and computational methods you plan to use.
 Our final analysis will center around applying and comparing various text 
 sentiment classification techniques. For our baseline classification model, we 
 will apply Naive Bayes classification to review summaries to predict whether a 
-review is "positive" or "negative", in a manner analogous to that employed by 
-last year's "Bayesian Tomatoes" assignment, including cross validation. 
-Individual words will be used as features. We will also extend our baseline 
-Naive Bayes classifier in several ways. One example would be to use the 
-"stemming" technique from natural language processing to merge features which 
-are the same in sentiment such that e.g. "awesomeness" and "awesome" would both
-map to a single feature. Second, we could incorporate priors on e.g. reviewer, 
-or game manufacturer during Naive Bayes classification. We also hope to attempt 
-random forest classification for the sake of comparison. Time permitting, we 
-may explore using n-grams as features rather than single words. In terms of 
-predicting the scores of ratings, we will attempt to use k-nearest neighbors 
-regression as a baseline, and attempt other regression methods as time permits.
+review is "good" (favorable) or "bad" (unfavorable), in a manner analogous to 
+that employed by last year's "Bayesian Tomatoes" assignment, including cross 
+validation. Individual words will be used as features. We will also extend our 
+baseline Naive Bayes classifier in several ways. One example would be to use 
+the "stemming" technique from natural language processing to merge features 
+which are the same in sentiment such that e.g. "awesomeness" and "awesome" 
+would both map to a single feature. Second, we could incorporate priors on e.g.
+reviewer or game manufacturer during Naive Bayes classification. We also hope 
+to attempt random forest classification for the sake of comparison. Time 
+permitting, we may explore using n-grams as features rather than single words. 
+In terms of predicting the scores of ratings, we will attempt to use k-nearest 
+neighbors regression as a baseline, and attempt other regression methods as 
+time permits.
 
 Verification
 How will you verify your project's results? In other words, how do you know 
@@ -116,12 +143,12 @@ that your project does well?
 ================================================================================
 There are two main components of our verification process. First, for each
 classifier in our final analysis, we will need to split our data into train and
-test sets, and then verify that we have not overfit by making predictions for 
-the unseen test data.
+test sets, and then make predictions for the unseen test data to verify
+that our model generalizes properly to additional data and is not overfit.
 
 A second verification step will be to compare our classification accuracy
-to the "Bayesian Tomatoes" classification accuracy of ~77%. This will
-tell us whether we did "well" or did poorly on our video game review 
+to the "Bayesian Tomatoes" movie review classification accuracy of ~77%. This 
+will tell us whether we did "well" or did poorly on our video game review 
 predictions relative to the previously studied case of movie reviews from 
 Rotten Tomatoes.
 
@@ -136,47 +163,50 @@ average review score grouped by company, console, or reviewer? Such plots
 would include basic histograms, line plots and bar charts.
 
 Second, we will want to use visualizations to display our model calibration
-results, similar to the "Bayesian Tomatoes" part 3.4 plots.
+findings, similar to the "Bayesian Tomatoes" part 3.4 plots.
 
-Finally, we will want to create a "take-home" visualization that illustrates
-the results of our final classification analysis. One visualization we intend 
-to make would be JavaScript word clouds of the most strongly positive and 
-negative words, wherein mousing over each word deploys a tooltip showing 
-P(good|word).
-
+Lastly, we will want to create one or more "take-home" visualization that 
+illustrate the results of our final classification analysis. One such 
+visualization we intend to make would be JavaScript word clouds of the most 
+strongly positive and negative words, wherein mousing over each word deploys a 
+tooltip showing P(good|word).
 
 Schedule / timeline
 Make sure that you plan your work so that you can avoid a big rush right before
 the final project deadline, and delegate different modules and responsibilities
 among your team members. Write this in terms of weekly deadlines.
 =================================================================
-
-
-There are roughly 4 weeks until the video presentation and website are due. Currently, from data scraping Gamespot reviews and using the Giant Bomb API, we have already gathered our main data sets for analysis. We have also answered some basic exploratory analysis questions such as what is the distribution of Giant Bomb and Gamespot scores.  From now until the project presentation deadline, we hope to meet the following other objectives. 
+There are roughly 4 weeks until the video presentation and website are due. 
+Currently, from data scraping Gamespot reviews and using the Giant Bomb API, we
+have already gathered our main data sets for analysis. We have also answered 
+some basic exploratory analysis questions such as what is the distribution of 
+Giant Bomb and Gamespot scores.  From now until the project presentation 
+deadline, we hope to meet the following other objectives. 
 
 Week 1
 - Nov 16 - 23, 2014
-	- Investigate all other exploratory analysis questions
-	- Precisely define main question for analysis next week
+	- Investigate all other exploratory analysis questions.
+	- Precisely define main question for analysis next week.
 
 Week 2
 - Nov 23 - 30, 2014
-	- Complete major portions of analysis.
-
+	- Complete major portions of classification analysis.
 
 Week 3
 - Nov 30 - Dec 7, 2014
-	- Complete first draft of process book; Includes the ‘narrative’ of the project in addition to the visualizations and main code resulting from last week's analysis. 
-	- Make software preparations for website and video construction
+	 - Complete first draft of process book; Includes the "narrative" of the
+           project in addition to the visualizations and main code resulting 
+           from last week's analysis. 
+	 - Make software preparations for website and video construction.
 		- Have website template prepared. 
 		- Acquire hardware and programs which are needed to make video. 
 
 Week 4
-- Dec 7 – 10, 2014
-	- Edit process book and prepare final draft for submission 
-	- Outline sections of website 
-	- Prepare script for video presentation
+- Dec 7 - 10, 2014
+	- Edit process book and prepare final draft for submission .
+	- Outline sections of website .
+	- Prepare script for video presentation.
 
 - Dec 10 - 12, 2014
-	- Complete Website
-	- Complete video presentation 
+	- Complete website.
+	- Complete video presentation.
