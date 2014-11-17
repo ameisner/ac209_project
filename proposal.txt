@@ -185,12 +185,12 @@ deadline, we hope to meet the following other objectives.
 
 Week 1
 - Nov 16 - 23, 2014
-	- Investigate all other exploratory analysis questions.
-	- Precisely define main question for analysis next week.
+	 - Investigate all other exploratory analysis questions.
+	 - Precisely define main question for analysis next week.
 
 Week 2
 - Nov 23 - 30, 2014
-	- Complete major portions of classification analysis.
+         - Complete major portions of classification analysis.
 
 Week 3
 - Nov 30 - Dec 7, 2014
@@ -208,5 +208,5 @@ Week 4
 	- Prepare script for video presentation.
 
 - Dec 10 - 12, 2014
-	- Complete website.
-	- Complete video presentation.
+	 - Complete website.
+	 - Complete video presentation.
