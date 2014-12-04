@@ -7,10 +7,8 @@ from nltk.stem.porter import PorterStemmer
 
 def remove_empty_reviews(rev_list, scores):
     l = np.array([len(r.replace(' ', '')) for r in rev_list])
-    rev_list = rev_list[l > 0]
-    scores = scores[l > 0]
 
-    return rev_list, scores
+    return rev_list[l > 0], scores[l > 0]
 
 def load_reviews_scores(stem=False):
     f = open('data/gamespot.json')
