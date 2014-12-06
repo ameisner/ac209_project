@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # written by Aaron Meisner, 5/12/2014
 
 import cPickle
@@ -9,13 +10,12 @@ from load_reviews_scores import load_reviews_scores
 
 def crossval_naive_bayes(stem=False, regex=False):
     # load review/score data (pass stem keyword along)
-    # construct Y
-
     reviews, scores = load_reviews_scores(stem=stem)
+
+    # construct target vector
     Y = (scores >= 7)
 
-    #     load train/test indices
-
+    # load train/test indices
     ind_train = cPickle.load(file('data/ind_train.pkl'))
 
     # make array of candidate min_df values
@@ -27,35 +27,31 @@ def crossval_naive_bayes(stem=False, regex=False):
     n_min_df = len(min_dfs)
     n_alpha = len(alphas)
 
-    # initialize 2d grid of cv scores
+    # initialize 2d grids holding cross-validation results
     grid_cv_score = np.zeros((n_min_df, n_alpha))
     grid_score_std = np.zeros((n_min_df, n_alpha))
     grid_min_df = np.zeros((n_min_df, n_alpha))
     grid_alpha = np.zeros((n_min_df, n_alpha))
 
-    # initialize 2d grid of min_df values
-    # initialize 2d grid of alpha values
-
     parameters = {'alpha' : alphas}
 
     for i, min_df in enumerate(min_dfs):
-    #     print out parameter values
+    #   print out current min_df parameter value
         print i, min_df
-    #     construct X 
+    #   construct feature matrix 
         vectorizer = CountVectorizer(min_df=min_df)
         vectorizer.fit(reviews)
         X = vectorizer.transform(reviews)
   
-    #     restrict to the train indices
+    #   restrict to the training indices and run 10-fold CV with GridSearchCV
         clf_gs = sklearn.grid_search.GridSearchCV(MultinomialNB(), parameters,
                                                    cv=10)
         clf_gs.fit(X[ind_train,:], Y[ind_train])
         clf_gs.grid_scores_
 
-    #     run 10 fold CV with gridsearch
         cv_means = np.array([clf_gs.grid_scores_[j][1] for j in range(n_alpha)])
         cv_stds = np.array([np.std(clf_gs.grid_scores_[j][2]) for j in range(n_alpha)])
-    #     store the cross validation scores in 2d grid
+    #   store information about inputs and scores for this value of min_df
         grid_cv_score[i, :] = cv_means
         grid_score_std[i, :] = cv_stds
         grid_min_df[i, :] = min_df
