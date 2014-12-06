@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# written by Aaron Meisner, 5/12/2014
+# written by Aaron Meisner, 12/5/2014
 
 import cPickle
 import numpy as np
