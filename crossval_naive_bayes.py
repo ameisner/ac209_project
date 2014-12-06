@@ -19,19 +19,17 @@ def crossval_naive_bayes(stem=False, regex=False):
     ind_train = cPickle.load(file('data/ind_train.pkl'))
 
     # make array of candidate min_df values
-    min_dfs = np.array([0.00008, 0.0001, 0.0005, 0.001, 0.002, 
-                        0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009,
-                        0.01])
-
     min_dfs = np.arange(0.00008, 0.01002, 0.00002)
     # make array of candidate alpha values
-    alphas = np.array([0.005, 0.1, 0.5, 1, 2, 5, 10])
+    alphas = np.array([0.005, 0.1, 0.5, 1, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 5, 
+                       10])
 
     n_min_df = len(min_dfs)
     n_alpha = len(alphas)
 
     # initialize 2d grid of cv scores
     grid_cv_score = np.zeros((n_min_df, n_alpha))
+    grid_score_std = np.zeros((n_min_df, n_alpha))
     grid_min_df = np.zeros((n_min_df, n_alpha))
     grid_alpha = np.zeros((n_min_df, n_alpha))
 
@@ -56,8 +54,10 @@ def crossval_naive_bayes(stem=False, regex=False):
 
     #     run 10 fold CV with gridsearch
         cv_means = np.array([clf_gs.grid_scores_[j][1] for j in range(n_alpha)])
+        cv_stds = np.array([np.std(clf_gs.grid_scores_[j][2]) for j in range(n_alpha)])
     #     store the cross validation scores in 2d grid
         grid_cv_score[i, :] = cv_means
+        grid_score_std[i, :] = cv_stds
         grid_min_df[i, :] = min_df
         grid_alpha[i, :] = alphas
 
@@ -65,6 +65,10 @@ def crossval_naive_bayes(stem=False, regex=False):
     o_scores = open('data/grid_cv_score.pkl', 'wb')
     cPickle.dump(grid_cv_score, o_scores)
     o_scores.close()
+
+    o_score_stds = open('data/grid_score_std.pkl', 'wb')
+    cPickle.dump(grid_score_std, o_score_stds)
+    o_score_stds.close()
 
     o_alphas = open('data/grid_alpha.pkl', 'wb')
     cPickle.dump(grid_alpha, o_alphas)
