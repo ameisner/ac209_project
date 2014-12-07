@@ -9,7 +9,7 @@ import sklearn.grid_search
 from load_reviews_scores import load_reviews_scores
 
 def tune_random_forest(stem=False):
-    min_df_opt = 0.001 # from Naive Bayes cross-validation
+    min_df_opt = 0.001 # chosen to limit number of features
 
     # set up the list of trial n_trees values
     n_trees = np.array([1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 100, 150])
