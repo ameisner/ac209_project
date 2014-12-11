@@ -1,0 +1,22 @@
+In this study, we have applied exploratory analysis and machine learning techniques to online video game reviews culled from the
+Giant Bomb and GameSpot websites. To gather the data we used the Giant Bomb API and wrote a custom web scraper to extract review information
+directly from GameSpot HTML source. In total we analyzed more than 40000 video game reviews, from both professional critics and anonymous 
+users.
+
+We gained valuable insights about these particular data sets and the video game industry as a whole via our initial exploratory analysis of the reviews
+and associated metadata. In one highlight, we found that user review scores correlated well with the scores given by professional critics. This 
+is an encouraging sign in the context of our broader goal of generalizing the analysis we've present to arbitrary to video game related text found on the 
+internet. We also found that, even without recourse to sophisticated machine learning techniques, the data gathered were sufficient to identify
+"low-hanging fruit" for future game developers -- that is, we found game genres which are highly sought after by users, yet have an underabundance of titles
+and poor user reviews. This is an example of a way in which data science can provide actionable insights to the gaming industry.
+
+In our final analysis, we applied a variety of machine learning techniques to the problem of analyzing review sentiment. We used Naive Bayes classification
+to predict whether a review conveyed positive or negative sentiment, and found $\sim$76% accuracy after optimizing our classifier. We further 
+applied random forest classification to the same problem, finding $\sim$73% accuracy. These findings are very comparable to those of the Bayesian Tomatoes
+movie review analysis, which found Naive Bayes classification accuracies of $\sim$74-77%. We further extended beyond the Bayesian Tomatoes study by building 
+regression models to predict the numerical score corresponding to a review based on its text. We achieve an RMSE of $<1.3$, with reviews rated on a 1-10 scale.
+
+Lastly, we applied our optimized Naive Bayes classifier, trained on GameSpot reviews, to predict the sentiment of reviews from the Giant Bomb data set. Remarkably,
+the classifier still achieved $>$75% accuracy when applied to a completely different movie review data set than that used to train the model. Thus, this study
+represents a good first step in the goal of applying machine learning and data science techniques to arbitrary video game related online content in order
+to gain insights about consumer opinion and future development endeavors.
